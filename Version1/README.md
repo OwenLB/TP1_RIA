@@ -1,0 +1,5 @@
+- Afficher le prix d’un produit (GET) 👍
+- Supprimer un produit (DELETE) 👍
+- Ajouter un produit (ADD => POST) 👍
+- Afficher tous les produits (GET ALL) 👍
+- Afficher l’évolution du prix d’un produit (PUT)
