@@ -1,0 +1,27 @@
+<div class="list row">
+  <div class="col-md-6">
+    <h4>Products List</h4>
+    
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let product of products; let i = index"
+      >
+        <h4>{{ product.nom }} - {{ product.prix}}€</h4>
+        {{ product.description}}<br/>
+
+        <button class="m-3 btn btn-sm btn-primary" (click)="edit(product.id_produit)">
+          Edit
+        </button>
+        <button class="m-3 btn btn-sm btn-danger" (click)="deleteProduct(product.id_produit)">
+          Delete
+        </button>
+      </li>
+    </ul>
+
+    <button class="m-3 btn btn-sm btn-danger" (click)="getProducts()">
+      Remove All
+    </button>
+  </div>
+ 
+</div>
